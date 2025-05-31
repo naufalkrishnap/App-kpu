@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Entry"
+            android:textSize="30sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/nik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIK"
+            android:layout_below="@id/judul"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter the NIK"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/nik"
+            android:background="@drawable/red_border"
+            android:layout_marginTop="1dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:layout_below="@id/nik"
+            android:textSize="24sp"
+            android:layout_marginTop="60dp"/>
+
+        <EditText
+            android:id="@+id/label_nama"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter the name"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/nama"
+            android:background="@drawable/red_border"
+            android:layout_marginTop="1dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/nohp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. HP"
+            android:layout_below="@id/label_nama"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/label_nohp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter the no.hp"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/nohp"
+            android:background="@drawable/red_border"
+            android:layout_marginTop="1dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/jk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JK"
+            android:layout_below="@id/label_nohp"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"/>
+
+        <RadioButton
+            android:id="@+id/jk_laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:layout_below="@+id/jk"/>
+
+        <RadioButton
+            android:id="@+id/jk_perempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/jk" />
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:layout_below="@id/jk_laki"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/label_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter the tanggal"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/tanggal"
+            android:background="@drawable/red_border"
+            android:layout_marginTop="1dp"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:layout_below="@id/label_tanggal"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/label_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter the alamat"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/alamat"
+            android:background="@drawable/red_border"
+            android:layout_marginTop="1dp"
+            android:maxLines="1" />
+
+        <ImageView
+            android:id="@+id/selectedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="16dp"
+
+            android:layout_below="@id/label_alamat"
+            android:background="@drawable/rounded_corner"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/buttonSelectImage"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Select Image"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:layout_below="@id/selectedImageView"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="SUBMIT"
+            android:layout_marginTop="80dp"
+            android:layout_below="@id/selectedImageView"
+            android:layout_marginBottom="20dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
